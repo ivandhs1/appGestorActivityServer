@@ -1,0 +1,63 @@
+###
+GET http://localhost:3000/api/activitys/
+
+###
+GET http://localhost:3000/api/users/
+
+###
+POST http://localhost:3000/api/activitys/
+Content-Type: application/json
+
+{ 
+    "_id":"dasfasdas",
+    "nameActivity":"CAMBIAR USUARIO", 
+    "descActivity": "se solicita crear un cambiar usuario", 
+    "stateActivity": 0,
+    "userAsignado": "0", 
+    "setTime": "12/07/2021, 4:30 PM"
+}
+
+
+###
+POST http://localhost:3000/api/users/
+Content-Type: application/json
+
+{ 
+    "_id":"dasfasdas",
+    "nameUser":"Ivan", 
+    "passwordUser": "daniel99hsw1"
+}
+
+###
+GET http://localhost:3000/api/activitys/64bc444eb2d021b534f398d2
+
+###
+GET http://localhost:3000/api/users/64c3f298c1641d86bf775b34
+
+
+###
+PUT http://localhost:3000/api/activitys/64bc444eb2d021b534f398d2
+Content-Type: application/json
+
+{ 
+    "nameActivity": "OBSERVAR USUARIO",
+    "descActivity": "se solicita crear un ver usuario",
+    "stateActivity": 0,
+    "userAsignado": "0",
+    "setTime": "2021-12-07T21:38:00.000Z"
+}
+
+
+###
+PUT http://localhost:3000/api/users/64c3f298c1641d86bf775b34
+Content-Type: application/json
+
+{ 
+    "_id":"dasfasdas",
+    "nameUser":"Ivan Hincapie", 
+    "passwordUser": "daniel99hsw1"
+}
+
+###
+DELETE  http://localhost:3000/api/activitys/64c33ae920e400db946c81f6
+
